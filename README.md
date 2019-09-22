@@ -2,6 +2,8 @@ This is a "Vulnerable" Web Application developed by Cyber Security and Privacy F
 
 **The full course content is now available on Github for free:**
 
+
+
 https://github.com/CSPF-Founder/JavaSecurityCourse
 
 
