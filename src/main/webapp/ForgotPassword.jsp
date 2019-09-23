@@ -25,6 +25,7 @@
             </script> 
             
  My Password Recovery: 
+
 <form action="ForgotPassword.jsp" method="post">
 <table> 
 <tr><td>Username: </td><td><input type="text" name="username" id="username"/></td><td><span id="status"></span></td></tr>
