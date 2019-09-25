@@ -24,7 +24,7 @@
               });  
             </script> 
             
- My Password Recovery: 
+ My Password Recovery Form Goes Here: 
 
 <form action="ForgotPassword.jsp" method="post">
 <table> 
