@@ -13,7 +13,7 @@
 if(session.getAttribute("isLoggedIn")!=null)
 {
     %>
-    Change Credit Card Info:<br/><br/>
+    Change Credit Card Information:<br/><br/>
 		<form action="changeCardDetails.jsp" method="POST">
                     <table>
                         <tr><td>Card Number:</td><td><input type="text" name="cardno" value=""/> </td></tr>
