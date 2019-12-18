@@ -15,7 +15,7 @@
                       {
                           if(result.available==0)
                           {
-                          $("#status").html("<b style='color:green'>&#10005; Available</b>");
+                          $("#status").html("<b style='color:green'>&#10006; Available</b>");
                            }
                            else
                            {
