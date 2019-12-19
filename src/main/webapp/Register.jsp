@@ -6,6 +6,7 @@
 
 
 
+
  <%@ include file="header.jsp" %>
      <script type="text/javascript">  
               $(document).ready(function(){  
@@ -19,7 +20,7 @@
                            }
                            else
                            {
-                               $("#status").html("<b style='color:red'>&#10006; Username is already taken</b>");
+                               $("#status").html("<b style='color:red'>&#10007; Username is already taken</b>");
                            }
                           
                       });
