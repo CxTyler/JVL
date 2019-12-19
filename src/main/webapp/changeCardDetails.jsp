@@ -16,7 +16,7 @@ if(session.getAttribute("isLoggedIn")!=null)
     Change Credit Card Information:<br/><br/>
 		<form action="changeCardDetails.jsp" method="POST">
                     <table>
-                        <tr><td>Card Number:</td><td><input type="text" name="cardno" value=""/> </td></tr>
+                        <tr><td>Credit Card Number:</td><td><input type="text" name="cardno" value=""/> </td></tr>
                <tr><td> CVV:</td><td><input type="text" name="cvv" value=""/> </td></tr>
                 <tr><td>Expiry Date:</td><td><input type="text" name="expirydate" value=""/> </td></tr>
 		<tr><td/><td><input type="submit" name="action" value="add"/></td></tr>
