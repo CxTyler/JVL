@@ -45,7 +45,7 @@ public class EmailCheck extends HttpServlet {
                 {
                     ResultSet rs=null;
                     Statement stmt = con.createStatement();  
-                    rs=stmt.executeQuery("select * from users where email='"+email+"'");
+                    rs=stmt.executeQuery("select * from users where email ='"+email+"'");
                     if (rs.next()) 
                     {  
                      json.put("available", "1"); 
