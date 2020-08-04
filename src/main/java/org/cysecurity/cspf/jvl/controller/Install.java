@@ -84,7 +84,7 @@ public class Install extends HttpServlet {
             out.println("<title>Servlet install</title>");            
             out.println("</head>");
             out.println("<body>");
-            if(setup(i))
+            if(setup("HARDCODES LIST KEY/VALUE PAIR SELECTION"))
             {
                 out.print("successfully installed");
             }
