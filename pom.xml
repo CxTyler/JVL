@@ -18,7 +18,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
+				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
 					<!-- maximize compatibility -->
@@ -36,7 +36,7 @@
 					<appendAssemblyId>false</appendAssemblyId>
 					<archive>
 						<manifest>
-							<mainClass>ysoserial.GeneratePayload</mainClass>
+							<mainClass>jvl.GeneratePayload</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
