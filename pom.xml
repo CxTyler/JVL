@@ -5,10 +5,10 @@
 	<groupId>jvl</groupId>
 	<artifactId>jvl</artifactId>
 	<version>0.0.1</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
-	<name>ysoserial</name>
-	<url>https://github.com/frohoff/ysoserial/</url>
+	<name>jvl</name>
+	<url>https://github.com/CxTyler/JVL</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +36,8 @@
 					<appendAssemblyId>false</appendAssemblyId>
 					<archive>
 						<manifest>
-							<mainClass>jvl.GeneratePayload</mainClass>
+							<addClasspath>true</addClasspath>
+							<mainClass>jvl.Install</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
