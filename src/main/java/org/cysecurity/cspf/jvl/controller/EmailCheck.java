@@ -43,13 +43,13 @@ public class EmailCheck extends HttpServlet {
                JSONObject json=new JSONObject();
                 if(con!=null && !con.isClosed())
                 {
-                    ResultSet rs=null;
-                    PreparedStatement ps = con.preparedStatement("select * from users where email = ?")
-                    ps.setString(1,email)
-                    ResultSet result = ps.executeQuery();
-                    //Statement stmt = con.createStatement();  
-                    //rs=stmt.executeQuery("select * from users where email ='"+email+"'");
+                    Statement stmt = con.createStatement();  
+                    rs=stmt.executeQuery("select * from users where email ='"+email+"'");
 
+                    //ResultSet rs=null;
+                    //PreparedStatement ps = con.preparedStatement("select * from users where email = ?");
+                    //ps.setString(1,email);
+                    //ResultSet result = ps.executeQuery();
 
                     if (rs.next()) 
                     {  
