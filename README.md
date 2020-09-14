@@ -2,7 +2,7 @@ This is a "Vulnerable" Web Application developed by Cyber Security and Privacy F
 
 **The full course content is now available on Github for free:**
 
-
+Trigger for CxFlow PR
 
 
 https://github.com/CSPF-Founder/JavaSecurityCourse
