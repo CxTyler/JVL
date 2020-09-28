@@ -37,6 +37,7 @@ public class AddPage extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
            String fileName=request.getParameter("filename");
+           //comment for fix here
            String content=request.getParameter("content");
            if(fileName!=null && content!=null)
            {
