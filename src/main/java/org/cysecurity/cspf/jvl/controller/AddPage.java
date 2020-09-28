@@ -34,6 +34,7 @@ public class AddPage extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        //Bug Fix Needed
         PrintWriter out = response.getWriter();
         try {
            String fileName=request.getParameter("filename");
