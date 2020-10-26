@@ -46,7 +46,7 @@ How to Use/Setup ?
       8. Find the IP Address of Machine
       9. In your Browser, go to "http://[IP_ADDRESS_OF_VM]:8080/JavaVulnerableLab/install.jsp 
       10. Click the Install Button
-      11. Enjoy :)
+      11. Cheers :)
       
 **Method 3.Easiest Method : Standalone Web Application**
   In this mehtod, you will be running an executable "JAR" file which runs the application with an embedded Apache Tomcat. 
