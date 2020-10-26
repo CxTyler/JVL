@@ -29,6 +29,7 @@ How to Use/Setup ?
      5. Change the JDBC URL from jdbc:mysql://localhost:3306 to jdbc:mysql://mysql:3306
      6. Click the Install Button
      7. Enjoy :)
+     8. Have fun!
 
 
 **Method 2.Very Easiest Method : VirtualBox VM**
