@@ -4,9 +4,6 @@ Trigger for GitLab Automated CxSAST Scan
 
 **The full course content is now available on Github for free:**
 
-Trigger for CxFlow PR
-
-
 https://github.com/CSPF-Founder/JavaSecurityCourse
 
 
@@ -14,7 +11,7 @@ https://github.com/CSPF-Founder/JavaSecurityCourse
 
 https://www.udemy.com/hacking-securing-java-web-programming/
 
-**Warning**: Don't run this app in Your Main Machine or in  an online server.  Install it in Vitual Machine.
+**Warning**: Don't run this app in Your Main Machine or in  an online server.  Install it in Vitual Machine
 
  
 How to Use/Setup ?
@@ -33,7 +30,6 @@ How to Use/Setup ?
      6. Click the Install Button
      7. Enjoy :)
 
-
 **Method 2.Very Easiest Method : VirtualBox VM**
   The second most easiest way to use Java Vulnerable is using the VirtualBox VM which has everything set up and ready to use. 
   
@@ -49,7 +45,6 @@ How to Use/Setup ?
       8. Find the IP Address of Machine
       9. In your Browser, go to "http://[IP_ADDRESS_OF_VM]:8080/JavaVulnerableLab/install.jsp 
       10. Click the Install Button
-      11. Enjoy :)
       
 **Method 3.Easiest Method : Standalone Web Application**
   In this mehtod, you will be running an executable "JAR" file which runs the application with an embedded Apache Tomcat. 
