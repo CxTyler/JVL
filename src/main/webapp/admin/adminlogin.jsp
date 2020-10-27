@@ -1,4 +1,4 @@
- <%@page import="org.cysecurity.cspf.jvl.model.HashMe"%>
+<%@page import="org.cysecurity.cspf.jvl.model.HashMe"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.SQLException"%>
@@ -19,7 +19,7 @@ if(request.getParameter("Login")!=null)
                                    rs=stmt.executeQuery("select * from users where username='"+user+"' and password='"+pass+"' and privilege='admin'");
                                    if(rs != null && rs.next()){
                                    session.setAttribute("isLoggedIn", "1");
-                                   session.setAttribute("userid", rs.getString("id"));
+                                   session.setAttribute("userid", StringEscapeUtils.escapeHtml4(rs.getString("id")));
                                    session.setAttribute("user", StringEscapeUtils.escapeHtml4(rs.getString("username")));
                                    session.setAttribute("avatar", StringEscapeUtils.escapeHtml4(rs.getString("avatar")));
                                    session.setAttribute("privilege", StringEscapeUtils.escapeHtml4(rs.getString("privilege")));
