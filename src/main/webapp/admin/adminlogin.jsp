@@ -20,9 +20,9 @@ if(request.getParameter("Login")!=null)
                                    if(rs != null && rs.next()){
                                    session.setAttribute("isLoggedIn", "1");
                                    session.setAttribute("userid", rs.getString("id"));
-                                   session.setAttribute("user", rs.getString("username"));
-                                   session.setAttribute("avatar", rs.getString("avatar"));
-                                   session.setAttribute("privilege", rs.getString("privilege"));
+                                   session.setAttribute("user", StringEscapeUtils.escapeHtml4(rs.getString("username")));
+                                   session.setAttribute("avatar", StringEscapeUtils.escapeHtml4(rs.getString("avatar")));
+                                   session.setAttribute("privilege", StringEscapeUtils.escapeHtml4(rs.getString("privilege")));
                                    
                                    Cookie privilege=new Cookie("privilege","admin");
                                     privilege.setPath(request.getContextPath());
