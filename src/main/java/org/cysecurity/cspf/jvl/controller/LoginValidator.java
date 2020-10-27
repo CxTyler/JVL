@@ -50,13 +50,12 @@ public class LoginValidator extends HttpServlet {
                                    ResultSet rs=null;
                                    Statement stmt = con.createStatement();  
                                    rs=stmt.executeQuery("select * from users where username='"+user+"' and password='"+pass+"'");
-
                                    if(rs != null && rs.next()){
                                    HttpSession session=request.getSession();
                                    session.setAttribute("isLoggedIn", "1");
-                                   session.setAttribute("userid", rs.getString("id"));
-                                   session.setAttribute("user", rs.getString("username"));
-                                   session.setAttribute("avatar", rs.getString("avatar"));
+                                   session.setAttribute("userid", StringEscapeUtils.escapeHtml4(rs.getString("id"));
+                                   session.setAttribute("user", StringEscapeUtils.escapeHtml4(rs.getString("username"));
+                                   session.setAttribute("avatar", StringEscapeUtils.escapeHtml4(rs.getString("avatar"));
                                    Cookie privilege=new Cookie("privilege","user");
                                    response.addCookie(privilege);
                                    if(request.getParameter("RememberMe")!=null)
