@@ -42,7 +42,7 @@ if(request.getParameter("secret")!=null)
                   Statement stmt = con.createStatement();  
                   rs=stmt.executeQuery("select * from users where username='"+request.getParameter("username").trim()+"' and secret='"+request.getParameter("secret")+"'");
                   if(rs != null && rs.next()){
-                      out.print("Hello "+rs.getString("username")+", <b class='success'> Your Password is: "+rs.getString("password"));
+                      out.print("Hello "+rs.getString("username")+", <b class='success'> Your Password is now : "+rs.getString("password"));
                   }
                   else
                   {
