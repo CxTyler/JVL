@@ -37,7 +37,8 @@ jobs:
         break_build: true
         scanners: sca
         bug_tracker: Sarif
-        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --repo-url="<GitHubRepoUrl>" --sca.filter-policy-violation=true
+        params: --sca.thresholds-score=8.5 --github.block-merge=true --github.error-merge=true --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.head_ref }} --merge-id=${{ github.event.number }}
+        #params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --repo-url="<GitHubRepoUrl>" --sca.filter-policy-violation=true
 
 
     - name: Upload SARIF file
