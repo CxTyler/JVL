@@ -37,7 +37,7 @@ jobs:
         break_build: true
         scanners: sca
         bug_tracker: Sarif
-        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --repo-url="<GitHubRepoUrl>" --cx-flow.filterSeverity --cx-flow.filterCategory --filter-policy-violation="true"
+        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --repo-url="<GitHubRepoUrl>" --sca.filter-policy-violation="true"
 
 
     - name: Upload SARIF file
