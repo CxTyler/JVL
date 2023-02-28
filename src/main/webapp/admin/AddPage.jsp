@@ -15,7 +15,7 @@
   }
  else
  {
-     out.print("<b class='fail'> x You Are not Authorized to view this Page x </b>");
+     out.print("<b class='fail'> x You Are not Authorized to view this Page. Sorry! x </b>");
  }
  %>
  <%@ include file="/footer.jsp" %>
