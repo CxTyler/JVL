@@ -143,7 +143,7 @@
                                 {
                                     if(session.getAttribute("privilege")!=null && session.getAttribute("privilege").equals("admin"))
                                     {
-                                       out.print("<li><a href='"+path+"/admin/admin.jsp'>Admin Panel</a></li>"); 
+                                       out.print("<li><a href='"+path+"/admin/admin.jsp'>Admin Panel!!!</a></li>"); 
                                     }
                                     out.print("<li><a href='"+path+"/myprofile.jsp?id="+session.getAttribute("userid")+"'>My Profile</a></li>");
                                      out.print("<li><a href='"+path+"/Logout'>Logout</a></li>");

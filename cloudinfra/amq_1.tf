@@ -1,5 +1,5 @@
 resource "aws_mq_broker" "amq_1" {
-  broker_name = "AMQ_1"
+  broker_name = "AMQ_10"
 
   configuration {
     id       = aws_mq_configuration.test.id
